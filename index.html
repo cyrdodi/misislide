@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="css/svg-icons.css">
     <title>Misi Slide</title>
     <style>
+        @font-face {
+            font-family: "myFirstFont";
+            src: url("fonts/Overpass-Regular.ttf");
+        }
+
         body {
-            background-color: #3895aa;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(192,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%233895aa'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(192,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(328,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.51'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
-            background-attachment: fixed;
-            background-size: cover;
+            font-family: myFirstFont;
+        }
+
+        .text-main {
+            color: #111d5e;
+        }
+
+        .pukul {
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -32,57 +42,70 @@
             <section>
                 <div class="wrap">
                     <h2><strong>Jadwal Dokter RS Misi Lebak</strong></h2>
-                    <h3><strong>Dokter Spesialis Bedah Umum</strong></h3>
+                    <h3 class="text-main"><strong>Dokter Spesialis Bedah Umum</strong></h3>
                     <ul class="flexblock features">
                         <li>
                             <div>
-                                <p style="font-size: 35px;"><strong>dr. Andik Kusbiantoro, Sp.B</strong></p>
+                                <p style="font-size: 35px;"><strong>dr. Andik Kusbiantoro,
+                                        Sp.B</strong></p>
                                 <hr>
-                                <p><strong>Senin & Kamis</strong> Pukul 14.00 WIB s/d 18.00 WIB</p>
-                                <p><strong>Rabu & Sabtu</strong> Pukul 10.00 WIB s/d 14.00</p>
-                                <p><strong>Rabu & Sabtu</strong> Pukul 10.00 WIB s/d 14.00</p>
+                                <p><strong>Senin & Kamis</strong> </p>
+                                <p class="pukul">Pukul 14.00 WIB s/d 18.00 WIB</p>
+                                <p><strong>Rabu & Sabtu</strong> </p>
+                                <p>Pukul 10.00 WIB s/d 14.00</p>
+                                <p><strong>Rabu & Sabtu</strong> </p>
+                                <p>Pukul 10.00 WIB s/d 14.00</p>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <p style="font-size: 35px;"><strong>dr. Andi Fittrani, Sp.B</strong></p>
                                 <hr>
-                                <p><strong>Selasa & Jumat</strong> Pukul 08.00 WIB – 14.00 WIB</p>
+                                <p><strong>Selasa & Jumat</strong> </p>
+                                <p>Pukul 08.00 WIB – 14.00 WIB</p>
                             </div>
                         </li>
 
                     </ul>
                 </div>
+                </footer>
             </section>
             <!-- slide 3 -->
             <section>
                 <div class="wrap">
                     <h2><strong>Jadwal Dokter RS Misi Lebak</strong></h2>
-                    <h3><strong>Dokter Spesialis Kandungan</strong></h3>
+                    <h3 class="text-main"><strong>Dokter Spesialis Kandungan</strong></h3>
                     <ul class="flexblock features">
                         <li>
                             <div>
                                 <p style="font-size: 35px;"><strong>dr. Wilyanto Wijaya, Sp.OG</strong></p>
                                 <hr>
-                                <p><strong>Senin, Selasa & Rabu</strong> Pukul 07.00 WIB s/d 12.00 WIB</p>
+                                <p><strong>Senin, Selasa & Rabu</strong> </p>
+                                <p>Pukul 07.00 WIB s/d 12.00 WIB</p>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <p style="font-size: 35px;"><strong>dr. Ferry Yama Irawan, Sp.OG</strong></p>
                                 <hr>
-                                <p><strong>Kamis</strong> Pukul 12.30 WIB s/d 16.00 WIB</p>
-                                <p><strong>Jumat</strong> Pukul 13.00 WIB s/d 16.00 WIB</p>
-                                <p><strong>Sabtu</strong> Pukul 12.30 WIB s/d 16.00 WIB</p>
+                                <p><strong>Kamis</strong> </p>
+                                <p>Pukul 12.30 WIB s/d 16.00 WIB</p>
+                                <p><strong>Jumat</strong> </p>
+                                <p>Pukul 13.00 WIB s/d 16.00 WIB</p>
+                                <p><strong>Sabtu</strong> </p>
+                                <p>Pukul 12.30 WIB s/d 16.00 WIB</p>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <p style="font-size: 35px;"><strong>dr. Acep Supardi, Sp.OG</strong></p>
                                 <hr>
-                                <p><strong>Senin & Selasa</strong> Pukul 07.00 WIB s/d 12.30 WIB</p>
-                                <p><strong>Kamis</strong> Pukul 07.00 WIB s/d 14.00 WIB</p>
-                                <p><strong>Sabtu</strong> Pukul 07.00 WIB s/d 12.00 WIB</p>
+                                <p><strong>Senin & Selasa</strong> </p>
+                                <p>Pukul 07.00 WIB s/d 12.30 WIB</p>
+                                <p><strong>Kamis</strong> </p>
+                                <p>Pukul 07.00 WIB s/d 14.00 WIB</p>
+                                <p><strong>Sabtu</strong> </p>
+                                <p>Pukul 07.00 WIB s/d 12.00 WIB</p>
                             </div>
                         </li>
 
